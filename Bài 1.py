@@ -1,10 +1,13 @@
-print(' --- HỆ THỐNG TIEP NHẬN BỆNH NHÂN --- ')
+print("--- PHẦN MỀM TÍNH TỔNG QUỸ LƯƠNG ---")
 
-name_patient = input('Nhập tên bệnh nhân: ')
-age = int(input('Mời bạn nhập tuổi: '))
-symptom = input('Mời bạn nhập triệu chứng bệnh: ')
+total_budget = 0
 
-print(' --- PHIẾU KHÁM BỆNH --- ')
-print('Tên bệnh nhân:', name_patient)
-print('Tuổi:', age)
-print('Triệu chứng:', symptom)
+for employee_number in range(1, 4):
+
+    print("Đang xử lý nhân viên số", employee_number)
+
+    salary = int(input("Nhập mức lương (VNĐ): "))
+
+    total_budget = total_budget + salary
+
+print("KẾT QUẢ: TỔNG NGÂN SÁCH CẦN CHUẨN BỊ LÀ:", total_budget, "VNĐ")
